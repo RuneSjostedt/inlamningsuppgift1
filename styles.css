@@ -88,6 +88,18 @@ body {  font-family: "Manrope", sans-serif;
         text-decoration: underline;
     }
 
+    .cards-primary {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    background: rgba(99, 102, 241, 0.08);
+    }
+
     
     .btn-primary {
         background-color: var(--color-primary);
@@ -125,7 +137,7 @@ body {  font-family: "Manrope", sans-serif;
         color: var(--color-white);
         text-decoration: none;
     }
-
+   
 
 
     .btn-circle {
@@ -392,8 +404,92 @@ body {  font-family: "Manrope", sans-serif;
             align-items: center;
         }
     }
+
+    #Appfeatures {
+        
+        .container {
+            display:grid;
+
+        
+
+        }
+
+        .img-apps {
+         
+
+        }
+
+        .appcontent {
+           
+
+            h1 {
+                color: var(--color-gray-900);
+                font-weight: 800;
+                font-size: 40px;
+            }
+
+            p {
+                color: var(--color-gray-600);
+                font-weight: 400;
+                font-size: 18px;
+
+
+            }
+        }
+
+
+        
+        .featurelist {
+            height: 465px;
+            width: 765px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid
+            grid-gap: 10px;
+            background-color: #fff;
+            color: #444;
+           
+           
+           
+
+
+            .featurebox {
+                display: flex;
+                align-items: flex-start;
+                gap: 24px;
+                align-items: center;
+
+                .cards-primary {
+                  
+                }
+
+                
+                h2 {
+                    
+                }
+
+                p {
+                   
+                }
+
+           
+            }
+
+         }
+        }
+
     
 
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -443,5 +539,5 @@ body {  font-family: "Manrope", sans-serif;
             gap: 5px;
         }
 
-        
     }
+
