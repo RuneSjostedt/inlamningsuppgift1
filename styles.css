@@ -528,7 +528,7 @@ body {  font-family: "Manrope", sans-serif;
                 
                 h2 {
                 margin: 0;
-                padding 0;
+                padding: 0;
 
                 color: var(--color-gray-900);
                 font-size: 32px;
@@ -629,6 +629,94 @@ body {  font-family: "Manrope", sans-serif;
          }
          }
         
+         /*client reviews*/
+         
+         #client-reviews {
+            padding-top: 73px;
+            padding-bottom: 120px;
+            
+            background-color: var(--color-Gray-100);
+            
+           
+            .container {
+                display: flex;
+                gap: 135px;
+
+            }
+
+            .ratings-img {
+
+            }
+
+            .review-headline {
+                h2 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 40px;
+                    font-weight: 800;
+                    color: var(--color-gray-900);
+                }
+            }
+
+            .review-cards {
+                display: flex;
+                gap: 24px;
+
+                .quote-img {
+                    width: 44px;
+                    position: absolute;
+                    margin-left: 16px;
+                }
+
+                .review-card {
+                    background-color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+                    width: 416px;
+                    margin-top: 20px;
+                    padding: 48px 24px 24px 24px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    gap: 24px;
+                    
+                    .ratings-img {
+                       width: 88px;
+                    }
+
+                    .review-p-content {
+                        color: var(--color-gray-700);
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+
+                    .customer-avatar {
+                        display: flex;
+                        gap: 16px;
+                        
+                        }
+                        .username {
+                            color: var(--color-gray-900);
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .work-tag {
+                        color: var(--color-gray-600);
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+
+
+                }
+                
+             }
+        
+        
+
+
 
     
 
