@@ -707,13 +707,59 @@ body {  font-family: "Manrope", sans-serif;
                         font-size: 14px;
                         font-weight: 400;
                     }
-
-
-
                 }
                 
              }
-        
+             /* FAQ */
+
+             #faq {
+
+                .container {
+
+                }
+
+                .faq-section-1 {
+
+                    .faq-headline {
+
+                        h2 {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+
+                    .faq-p {
+
+                    }
+
+                    .faq-contact-cards  {
+
+                        .faq-contact-card {
+
+                            .faq-img {
+                               
+                            }
+
+                            p {
+
+                            }
+
+                            .contact-box {
+
+                            }
+
+                            span {
+
+                            }
+
+                            i {
+
+                            }
+                        }
+                    }
+                }
+             }
+
         
 
 
