@@ -713,62 +713,179 @@ body {  font-family: "Manrope", sans-serif;
              /* FAQ */
 
              #faq {
-
+                margin-top: 105px;
+                margin-bottom: 112px;
                 .container {
-
+                    margin-top: 105px;
+                    display: flex;
+                    gap: 134px;
                 }
 
                 .faq-section-1 {
-
+                    
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
                     .faq-headline {
 
                         h2 {
                             margin: 0;
                             padding: 0;
+
+                            font-size: 32px;
+                            font-weight: 800;
+                            color: var(--color-gray-900);
                         }
                     }
 
                     .faq-p {
-
+                        color: var(--color-gray-700);
+                        font-size: 18px;
                     }
 
                     .faq-contact-cards  {
-
+                        margin-top: 8px;
+                        display: flex;
+                        gap: 24px;
                         .faq-contact-card {
+                            width: 196px;
+                            padding: 24px 24px 24px 24px;
 
+                            border-radius: 8px;
+                            border: 1px solid var(--color-gray-300);
+                            
                             .faq-img {
                                
                             }
 
                             p {
-
+                                font-size: 14px;
+                                color: var(--color-gray-700);
+                                margin-bottom: 8px;
+                                margin-top:16px;
                             }
 
-                            .contact-box {
-
+                            .contact-box-1 {
+                                padding: 11px 0px;
+                                height: 44px;
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                               color: var(--color-primary);
                             }
 
-                            span {
-
+                            .contact-box-2 {
+                                padding: 11px 0px;
+                              display: flex;
+                              align-items: center;
+                              gap: 8px;
+                                color: #22C55E;
                             }
 
-                            i {
-
-                            }
                         }
                     }
                 }
-             }
+                
+                .btn-circle {
+                    background: var(--Gray-100, #F3F6FF);
+                    height: 36px;
+                    width: 36px;
+                }
+                
+                .faq-section-2 {
 
-        
+                    .faq-cards {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 18px;
+                        height: 600px;
 
+
+                        .faq-card {
+                            box-shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05), 0px 4px 9px -1px rgba(19, 16, 34, 0.03);
+                        }
+                        .accordion {
+                            border: none;
+                            background-color: #fff;
+                            display: flex;
+                           align-items: center;
+                           text-align: left;
+                           align-self: stretch;
+                           gap: 24px;
+                           box-shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05), 0px 4px 9px -1px rgba(19, 16, 34, 0.03);
+    
+                            h4 {
+                            width: 638px;
+                            
+                            margin: 0;
+                            
+                            font-family: "Manrope", sans-serif;
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: var(--color-gray-900);
+                            }
+                            
+                            
+                            
+                            text-decoration: 0;
+                            cursor: pointer;
+                            padding: 16px 24px;
+                            width: 746px;
+                            
+                           
+                            border-radius: 8px;
+                            transition: 0.4s;
+                        }
+                        
+                       .active, .accordion:after {
+                        box-shadow: none;
+                       }
+
+                      }
+
+                       .panel {
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+
+                        p {
+                            padding-bottom: 24px;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: var(--color-gray-700);
+                        }
+                       }
+                    }
+                }
+            /* subscribe section */
+                #subscribe {
+                    .container {
+
+                    }
+
+                    .subscribe-headline {
+                        display: flex;
+                        align-items: center;
+                        gap: 32px;
+                        img {
+                            width: 78px;
+                        }
+
+                        h2 {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 24px;
+                        }
+                    }
+                }
 
 
     
 
  
 
-    
     
     
     
