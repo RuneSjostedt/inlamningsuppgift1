@@ -7,7 +7,6 @@
     <title>Silicon</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
-
     <link rel="shortcut icon" href="images/favicon.ico.svg" type="image/x-icon">
 
 </head>
@@ -370,27 +369,24 @@
                     </div>
                 </div>
             </section>
-            
+            <!-- subscribe section -->
             <section id="subscribe">
                 <div class="container">
                     <div class="subscribe-headline">
                         <img src="images/notification-img.svg" alt="notification image">
                         <h2>Subscribe to our newsletter to stay <br> informed about latest updates</h2>
                     </div>
-                    
-
+                    <form class="subscribe-form">
+                        <div class="form">
+                            <div class="mail-img"><img src="images/mail-img.svg" alt=""></div>
+                            <input class="form-input" type="email" name="email" id="email" requried placeholder="Your Email">
+                            </div>
+                            <div class="form-btn">
+                            <button class="btn-primary">Subscribe</button>
+                            </div>
+                    </form>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
 
         </main>
 
@@ -402,56 +398,6 @@
         </footer>
     </div>
 
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-        <script>
-            
-            var acc = document.getElementsByClassName("accordion");
-const accordionBtn = document.getElementById('accordion-btn');
-
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-
-    const currentBg = accordionBtn.style.backgroundColor;
-    if (currentBg === 'var(--color-primary)') {
-      accordionBtn.style.backgroundColor = '';
-    } else {
-      accordionBtn.style.backgroundColor = 'var(--color-primary)';
-    }
-
-    const icon = accordionBtn.querySelector('i');
-    if (icon) {
-      if (icon.classList.contains('fa-angle-down')) {
-        icon.classList.remove('fa-angle-down');
-        icon.classList.add('fa-angle-up');
-      } else {
-        icon.classList.remove('fa-angle-up');
-        icon.classList.add('fa-angle-down');
-      }
-    }
-  });
-}
-        </script>
+<script src="index.js"></script>
 
 </html>

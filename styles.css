@@ -797,7 +797,7 @@ body {  font-family: "Manrope", sans-serif;
                     .faq-cards {
                         display: flex;
                         flex-direction: column;
-                        gap: 18px;
+                        gap: 16px;
                         height: 600px;
 
 
@@ -837,7 +837,7 @@ body {  font-family: "Manrope", sans-serif;
                             transition: 0.4s;
                         }
                         
-                       .active, .accordion:after {
+                       .active {
                         box-shadow: none;
                        }
 
@@ -861,11 +861,19 @@ body {  font-family: "Manrope", sans-serif;
                 }
             /* subscribe section */
                 #subscribe {
-                    .container {
 
+                    .container {
+                        display: flex;
+                        align-items: center;
+                        gap: 76px;
+                        background-color: var(--color-Gray-100);
+                        padding-top: 72px ;
+                        padding-bottom: 72px;
+                        padding-left: 90px;
                     }
 
                     .subscribe-headline {
+                        width: 526px;
                         display: flex;
                         align-items: center;
                         gap: 32px;
@@ -879,67 +887,56 @@ body {  font-family: "Manrope", sans-serif;
                             font-size: 24px;
                         }
                     }
+
+                    .subscribe-form {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid var(--Gray-400, #D4D7E5);
+                        width: 472px;
+                        border-radius: 8px;
+                        background-color: var(--color-white);
+                        
+                        .form {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                              .mail-img {
+                                width: 20px;
+                                height: 20px;
+                                margin-left: 8px ;
+                            }
+                        }
+                        .form-input {
+                            width: 330px;
+                             border: 0;
+                            border-radius: 8px;
+                            font-size: 16px;
+                            outline: 0;
+                        }
+
+                        .btn-primary {
+                            width: 142px;
+                            height: 52px;
+                            border: none;
+                            border-radius: 0px 8px 8px 0px;
+                        }
+                    }
                 }
-
-
-    
-
- 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                
     footer {
         font-size: 14px;
         padding-top: 1rem;
         padding-bottom: 1rem;
         color: var(--color-gray-600);
+        
 
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 5px;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
 
     }
