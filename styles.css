@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 /* variables and premade class section */
+
 :root {
     /* Grayscale 100-900 */
     --color-white: #FFFFFF;
+    --color-whitefaq: #FFFFFF;
+    --color-whitebg: #FFFFFF;
     --color-Gray-100: #F3F6FF;
     --color-gray-200: #EFF2FC;
     --color-gray-300: #E2E5F1;
@@ -12,9 +15,12 @@
     --color-gray-700: #565973;
     --color-gray-800: #33354D;
     --color-gray-900: #0B0F19;
+    
     /* Brand */
     --color-primary: #6366F1;
-    --color-gradient: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%,  #D946EF 100%);
+    --color-gradient:
+
+
     /* System */
     --color-error: #EF4444;
     --color-sucess: #22C55E;
@@ -26,6 +32,41 @@
     --container-padding: 1rem;
     --transition-time: all 0.2s;
     }
+
+
+html {
+    color-scheme: light;
+}
+
+.dark {
+    color-scheme: dark;
+    
+    --color-whitebg: #0B0F19;
+    --color-Gray-100: ;
+    --color-whitefaq: rgba(48, 46, 46, 0.192);
+ 
+
+.nav-link {
+    color: white;
+}
+.btn-circle {
+    background-color: rgb(29, 31, 29);
+    color: white;
+    border: var(--color-gray-800)
+}
+
+header{
+    background-color: #1B1E29;
+}
+
+ #hero {
+    background-color:#0B0F19;
+ }
+
+ .review-card {
+    
+ }
+}
 
 * {
     box-sizing: border-box;
@@ -43,11 +84,7 @@ body {  font-family: "Manrope", sans-serif;
     font-size: 16px;
     }
 
-    .wrapper {
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        height: 100vh;
-    }
+
 
     .container {
         width: 100%;
@@ -55,14 +92,27 @@ body {  font-family: "Manrope", sans-serif;
         padding-right: var(--container-padding);
         margin-left: auto;
         margin-right: auto;
-    }
-    @media (min-width: 1400px) {
-        .container {
+
+        @media (min-width: 1400px) {
             max-width: 1320px;
+            
         }
-        
+    }
+
+    .bg-page-1 {
+        background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+
 
     }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        
+        
+    }
+   
     a {
         color: var(--color-primary);
         text-decoration: none;
@@ -213,9 +263,19 @@ body {  font-family: "Manrope", sans-serif;
     .label {
         font-weight: 600;
         color: var(--color-gray-700);
+        margin-right: 16px;
     }
+    
+    .btn-hamburger {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        display: none;
+    }
+   
     /* navbar section */
-    header .navbar {
+
+    .navbar .container {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr auto auto;
@@ -225,14 +285,17 @@ body {  font-family: "Manrope", sans-serif;
     }
 
 
-    header .navbar {
+    .navbar .container {
         grid-template-columns: auto 1fr auto auto;
         gap:3rem;
         }
 
+        
+
      /*hero section  */
     #hero {
         background: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+        padding-top: 73px;
          padding-bottom: 2rem;
 
          overflow: hidden;
@@ -303,7 +366,7 @@ body {  font-family: "Manrope", sans-serif;
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
-
+                
                 @media (min-width: 1400px) {
                     flex-direction: row;
                 }
@@ -316,6 +379,7 @@ body {  font-family: "Manrope", sans-serif;
                 justify-content: center;
                 gap: 1rem;
                 margin-top: 2rem;
+                
 
                 @media (min-width: 768px) {
                     justify-content: flex-start;
@@ -329,7 +393,7 @@ body {  font-family: "Manrope", sans-serif;
         }
 
         .images {
-            position: relative;
+            position: sticky;
             display: none;
             grid-area: images;
 
@@ -381,16 +445,19 @@ body {  font-family: "Manrope", sans-serif;
     }
 
     #brands {
+        background-color: var(--color-whitebg);
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
         }
     }
     /* appfeature section */
     #Appfeatures {
-       margin-top: 112px;
-       margin-bottom: 112px;
+        background-color: var(--color-whitebg);
+       padding-top: 112px;
+       padding-bottom: 112px;
         
         .container {
             display:grid;
@@ -409,7 +476,7 @@ body {  font-family: "Manrope", sans-serif;
                 margin-top: 0;
                 margin-bottom: 1rem;
 
-                color: var(--color-gray-900);
+
                 font-weight: 800;
                 font-size: 40px;
             }
@@ -473,7 +540,7 @@ body {  font-family: "Manrope", sans-serif;
                 margin-bottom: 45px;
                 font-size: 40px;
                 font-weight: 800;
-                color: var(--color-gray-900);
+                
                 }
             }
 
@@ -507,8 +574,9 @@ body {  font-family: "Manrope", sans-serif;
          }
 
          #make-your-money {
-            margin-top: 127px;
-            margin-bottom: 112px;
+            background-color: var(--color-whitebg);
+            padding-top: 127px;
+            padding-bottom: 112px;
             .container {
              display: grid;
              grid-template-columns: 1fr 1fr;
@@ -530,7 +598,7 @@ body {  font-family: "Manrope", sans-serif;
                 margin: 0;
                 padding: 0;
 
-                color: var(--color-gray-900);
+                
                 font-size: 32px;
                 font-weight: 800;
                 }
@@ -585,7 +653,7 @@ body {  font-family: "Manrope", sans-serif;
                 h2 {
                     margin: 0;
                     padding: 0;
-                    color: var(--color-gray-900);
+                    
                     font-size: 32px;
                     font-weight: 800;
                 }
@@ -650,17 +718,20 @@ body {  font-family: "Manrope", sans-serif;
 
             .review-headline {
                 h2 {
+                    
                     margin: 0;
                     padding: 0;
                     font-size: 40px;
                     font-weight: 800;
-                    color: var(--color-gray-900);
+                    
                 }
             }
 
             .review-cards {
                 display: flex;
                 gap: 24px;
+                
+               
 
                 .quote-img {
                     width: 44px;
@@ -669,7 +740,7 @@ body {  font-family: "Manrope", sans-serif;
                 }
 
                 .review-card {
-                    background-color: #fff;
+                    background-color: var(--color-whitebg);
                     border-radius: 8px;
                     box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
                     width: 416px;
@@ -677,6 +748,7 @@ body {  font-family: "Manrope", sans-serif;
                     padding: 48px 24px 24px 24px;
                     display: flex;
                     flex-direction: column;
+
                     
                     gap: 24px;
                     
@@ -713,8 +785,9 @@ body {  font-family: "Manrope", sans-serif;
              /* FAQ */
 
              #faq {
-                margin-top: 105px;
-                margin-bottom: 112px;
+                background-color: var(--color-whitebg);
+                padding-top: 105px;
+                padding-bottom: 112px;
                 .container {
                     margin-top: 105px;
                     display: flex;
@@ -734,7 +807,7 @@ body {  font-family: "Manrope", sans-serif;
 
                             font-size: 32px;
                             font-weight: 800;
-                            color: var(--color-gray-900);
+                            
                         }
                     }
 
@@ -799,14 +872,18 @@ body {  font-family: "Manrope", sans-serif;
                         flex-direction: column;
                         gap: 16px;
                         height: 600px;
-
+                        
+                        .btn-circle {
+                            
+                        }
 
                         .faq-card {
                             box-shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05), 0px 4px 9px -1px rgba(19, 16, 34, 0.03);
+                            background-color: var(--color-whitefaq);
                         }
                         .accordion {
                             border: none;
-                            background-color: #fff;
+                            background-color: var(--color-whitefaq);
                             display: flex;
                            align-items: center;
                            text-align: left;
@@ -822,7 +899,7 @@ body {  font-family: "Manrope", sans-serif;
                             font-family: "Manrope", sans-serif;
                             font-size: 16px;
                             font-weight: 600;
-                            color: var(--color-gray-900);
+                            
                             }
                             
                             
@@ -839,6 +916,7 @@ body {  font-family: "Manrope", sans-serif;
                         
                        .active {
                         box-shadow: none;
+                        background-color: var(--color-whitefaq);
                        }
 
                       }
@@ -849,6 +927,7 @@ body {  font-family: "Manrope", sans-serif;
                         max-height: 0;
                         overflow: hidden;
                         transition: max-height 0.2s ease-out;
+                        
 
                         p {
                             padding-bottom: 24px;
@@ -940,4 +1019,3 @@ body {  font-family: "Manrope", sans-serif;
         }
 
     }
-
