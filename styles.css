@@ -967,13 +967,17 @@ body {  font-family: "Manrope", sans-serif;
                         }
                     }
 
-                    .subscribe-form {
+                    .subscribeForm {
                         display: flex;
                         align-items: center;
                         border: 1px solid var(--Gray-400, #D4D7E5);
                         width: 472px;
                         border-radius: 8px;
                         background-color: var(--color-white);
+
+                        :has(input:required) .form::after {
+                           
+                        }
                         
                         .form {
                             display: flex;
